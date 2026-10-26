@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Input Selector</string>
+    <string name="title">Select input</string>
+    <string name="no_inputs">No HDMI or AV inputs were found on this TV.</string>
+    <string name="not_connected">Not connected</string>
+    <string name="standby">Standby</string>
+    <string name="switch_failed">This TV does not allow switching to %1$s from apps.</string>
+</resources>

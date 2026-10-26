@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="popup_bg">#E6202124</color>
+    <color name="item_focused">#FFE8EAED</color>
+    <color name="text_primary">#FFE8EAED</color>
+    <color name="text_secondary">#FF9AA0A6</color>
+    <color name="text_on_focus">#FF202124</color>
+</resources>
