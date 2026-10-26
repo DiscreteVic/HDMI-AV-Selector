@@ -51,8 +51,8 @@ If it works (or doesn't) on your TV, please open an issue with the model so this
 3. Build and install:
 
    ```bash
-   git clone https://github.com/DiscreteVic/HDMI-AV-Slector.git
-   cd HDMI-AV-Slector
+   git clone https://github.com/DiscreteVic/HDMI-AV-Selector.git
+   cd HDMI-AV-Selector
 
    adb connect <tv-ip>:5555              # accept the prompt on the TV
    ./gradlew installDebug
