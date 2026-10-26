@@ -15,9 +15,26 @@ android {
         versionName "1.0"
     }
 
+    // Release signing comes from ~/.gradle/gradle.properties (never committed).
+    // Without it, assembleRelease produces an unsigned APK.
+    if (project.hasProperty("AVSELECTOR_STORE_FILE")) {
+        signingConfigs {
+            release {
+                storeFile file(AVSELECTOR_STORE_FILE)
+                storePassword AVSELECTOR_STORE_PASSWORD
+                keyAlias AVSELECTOR_KEY_ALIAS
+                keyPassword AVSELECTOR_KEY_PASSWORD
+            }
+        }
+    }
+
     buildTypes {
         release {
+            if (project.hasProperty("AVSELECTOR_STORE_FILE")) {
+                signingConfig signingConfigs.release
+            }
             minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt")
         }
     }
